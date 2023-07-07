@@ -1,0 +1,20 @@
+@tailwind components;
+
+@layer components {
+  .LazyImg {
+    position: relative;
+    width: inherit;
+    height: inherit;
+  }
+
+  .LazyImg img {
+    position: relative;
+    opacity: 0;
+    transition-duration: 0.5s;
+    border-radius: 6px;
+  }
+
+  .LazyImg img.loaded {
+    opacity: 1;
+  }
+}

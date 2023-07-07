@@ -1,0 +1,77 @@
+@tailwind components;
+
+@layer components {
+  .PostShow h2 {
+    /* Mail/H2 Bold 36pt */
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    @apply text-dark-midnight-blue text-[28px] md:text-[36px];
+  }
+
+  .PostShow small {
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.36px;
+    @apply text-slate-blue;
+  }
+
+  .PostShow p {
+    /* desktop/Body 1 regular 16 (150%) -2 */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.32px;
+    text-align: justify;
+    @apply text-dark-midnight-blue;
+  }
+
+  .PostShow .post-rating {
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.36px;
+    @apply text-slate-blue flex gap-[10px];
+  }
+
+  .PostShow .Comments .author {
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.28px;
+    @apply text-grape;
+  }
+
+  .PostShow .Comments .text {
+    color: #10131c;
+
+    /* Mobile/text 14 regular 140% -2 */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.28px;
+    @apply text-dark-midnight-blue;
+  }
+
+  .PostShow .comments-title {
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -0.48px;
+    @apply text-dark-midnight-blue;
+  }
+}

@@ -1,0 +1,64 @@
+@tailwind components;
+
+@layer components {
+  .PostCreate .title {
+    /* Mail/H2 Bold 36pt */
+    font-size: 36px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    @apply text-dark-midnight-blue;
+  }
+
+  .PostCreate .upload-img {
+    @apply bg-ghost-white relative w-[100%] h-[165px] md:w-[410px] md:h-[320px] mb-[20px] md:mb-[130px] m-auto flex justify-center items-center;
+  }
+
+  .PostCreate .upload-img .img-btn {
+    position: absolute;
+    top: 0;
+    transition-duration: 0.5s;
+    @apply w-full h-full flex items-center
+      justify-center;
+  }
+
+  .PostCreate .upload-img.loaded-img .img-btn {
+    opacity: 0;
+  }
+
+  .PostCreate .upload-img.loaded-img:hover .img-btn {
+    opacity: 1;
+  }
+
+  .PostCreate .upload-img .tint {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    @apply bg-ghost-white flex items-center justify-center;
+  }
+
+  .PostCreate .title-textarea {
+    /* Web/Basic/h3 36 Bold */
+    font-size: 36px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -1.08px;
+
+    @apply h-[100px] py-[16px] px-[20px];
+  }
+
+  .PostCreate .text-textarea {
+    /* Web/Mobile/b3 16 Regular */
+    font-size: 16px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    @apply h-[200px]  py-[16px] px-[20px];
+  }
+}

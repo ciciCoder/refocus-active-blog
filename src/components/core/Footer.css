@@ -1,0 +1,46 @@
+@tailwind components;
+
+@layer components {
+  .Footer {
+    @apply bg-dark-midnight-blue min-h-[213px] md:h-[176px] w-full;
+  }
+
+  .Footer .legalities {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    opacity: 0.4;
+    @apply text-white;
+  }
+
+  .Footer .socials-title {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    @apply text-white;
+  }
+
+  .Footer .socials {
+    @apply h-auto md:h-[56px] w-full md:w-[300px];
+  }
+
+  .Footer .social-links {
+    @apply flex flex-wrap gap-[15px];
+  }
+
+  .Footer .social-links li {
+    width: 30px;
+    height: 30px;
+    @apply bg-midnight-blue rounded-full flex justify-center items-center;
+  }
+
+  .Footer .social-links svg {
+    @apply fill-white;
+  }
+}

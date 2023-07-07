@@ -1,0 +1,24 @@
+@tailwind components;
+
+@layer components {
+  .TextArea label {
+    color: #10131c;
+    font-size: 24px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -0.48px;
+  }
+  .TextArea textarea {
+    display: block;
+    outline: none; /* Remove the default outline */
+
+    resize: none;
+    @apply border border-solid border-lavender-gray rounded-[6px];
+  }
+
+  .TextArea textarea:focus {
+    @apply border-royal-blue;
+  }
+}
