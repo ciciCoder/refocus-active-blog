@@ -1,5 +1,6 @@
 import {
   Route,
+  Router,
   createBrowserRouter,
   createRoutesFromElements,
 } from 'react-router-dom';
@@ -18,5 +19,9 @@ export const router = createBrowserRouter(
       <Route path="/posts/create" element={<PostCreate />} />
       <Route path="/posts/:postId" element={<PostShow />} />
     </Route>
-  )
+  ),
+  {
+    basename:
+      process.env.NODE_ENV === 'production' ? '/refocus-active-blog' : '/',
+  }
 );

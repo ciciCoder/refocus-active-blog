@@ -12,7 +12,7 @@
   }
 
   .PostCreate .upload-img {
-    @apply bg-ghost-white relative w-[100%] h-[165px] md:w-[410px] md:h-[320px] mb-[20px] md:mb-[130px] m-auto flex justify-center items-center;
+    @apply bg-ghost-white relative w-[100%] h-[165px] lg:w-[410px] md:h-[320px] mb-[20px] md:mb-[130px] m-auto flex justify-center items-center;
   }
 
   .PostCreate .upload-img .img-btn {

@@ -94,10 +94,10 @@ function PostCreate() {
     <div className="PostCreate">
       <form onSubmit={handleSubmit(onSubmitHandler)}>
         <PostCreateUploadLoading value={loading} progress={progress} />
-        <h1 className="title mb-[40px] md:mb-[50px]">New Post</h1>
-        <section className="flex flex-col-reverse md:flex-row justify-between">
-          <div className="w-full md:w-[590px]">
-            <div className="flex flex-col gap-[20px] md:gap-[40px]">
+        <h1 className="title mb-[40px] lg:mb-[50px]">New Post</h1>
+        <section className="flex flex-col-reverse lg:flex-row justify-between">
+          <div className="w-full lg:w-[590px]">
+            <div className="flex flex-col gap-[20px] lg:gap-[40px]">
               <TextArea
                 id={titleId}
                 label="Add title*"
@@ -126,7 +126,7 @@ function PostCreate() {
           <div className="flex flex-col items-center justify-center">
             <p className="text-error">{errors.image?.message}</p>
             <div
-              className={`upload-img ${
+              className={`upload-img translate-y-0 xl:translate-y-[-70px] ${
                 imgSrc && 'loaded-img'
               } rounded-[10px] overflow-hidden`}
             >

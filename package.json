@@ -1,12 +1,12 @@
 {
   "name": "refocus-posts-app",
-  "homepage": "https://ciciCoder.github.io/",
+  "homepage": "https://ciciCoder.github.io/refocus-adaptive-blog/",
   "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "start": "react-script start",
-    "dev": "vite",
+    "dev": "set PUBLIC_URL=https://ciciCoder.github.io/refocus-adaptive-blog/&&vite",
     "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

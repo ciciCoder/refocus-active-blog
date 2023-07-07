@@ -127,8 +127,8 @@ function PostShow() {
   }, [post]);
 
   return (
-    <div className="PostShow flex flex-col-reverse md:flex-row gap-[20px] md:gap-[40px]">
-      <div className="w-full md:w-[590px]">
+    <div className="PostShow flex flex-col-reverse lg:flex-row gap-[20px] md:gap-[40px]">
+      <div className="w-full lg:w-[590px]">
         <h2 className="w-[246px] md:w-auto">{post?.title}</h2>
         <div className="flex items-center mt-[20px]">
           <img
@@ -154,7 +154,7 @@ function PostShow() {
         <h3 className="comments-title mb-[20px]">Comments:</h3>
         <Comments postId={Number(postId)} comments={post?.comments || []} />
       </div>
-      <div className="w-full md:w-[410px] h-[165px] md:h-[320px] rounded-[10px] overflow-hidden translate-y-0 md:translate-y-[-64px]">
+      <div className="w-full lg:w-[410px] h-[165px] md:h-[320px] rounded-[10px] overflow-hidden translate-y-0 lg:translate-y-[-64px]">
         <LazyImg className="w-full h-full" src={post.image ?? noImage} alt="" />
       </div>
     </div>

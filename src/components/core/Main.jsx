@@ -15,7 +15,7 @@ function Main(props) {
   return (
     <main className="Main min-h-[calc(100vh-84px-176px)] w-[100vw] xl:w-[1200px] m-auto flex flex-col gap-[20px] md:gap-[40px]">
       {!isHomeLocation && (
-        <div className="hidden md:[display:unset]">
+        <div className="hidden lg:[display:unset] ">
           <NavLink className="goto-blog">
             <ArrowLeftIcon /> Blog
           </NavLink>
